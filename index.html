@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>ProducerPro</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <!-- We are also adding the auth.js SDK-->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+   <script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAPhg4pMiHVUACnHzwdZmzALAtWq1SW_VU",
+    authDomain: "publish-a4985.firebaseapp.com",
+    databaseURL: "https://publish-a4985.firebaseio.com",
+    projectId: "publish-a4985",
+    storageBucket: "publish-a4985.appspot.com",
+    messagingSenderId: "509052343591",
+    appId: "1:509052343591:web:269fa35b2e3244fb92c502",
+    measurementId: "G-JNYKMM9WJ5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</head>
+<body>
+    
+     <nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="posts.html">Post</a></li>
+				<li><a href="">Profile</a></li>
+				<li><a href="">Settings</a></li>
+				<li><a href="">About</a></li>
+			</ul>
+             </nav>
+
+	
+    <div id="container">
+        <!-- title / logo -->
+        <div id="title">
+            <h1>ProducerPRO</h1>
+        </div>
+        
+        <div id="main">
+            <img src="BEATS.png">
+        </div>
+        
+    </div>
+    
+    
+    
+	<div id="container">
+
+		<!-- elements to let users login -->
+		<div id="login">
+        	<input type="text" id="login-email" placeholder="Email">
+        	<input type="password" id="login-password" placeholder="Password">
+        	<button id="login-button">Login</button>
+        	<p id="login-message"></p>
+            <p><a href="create.html">Create a new account</a></p>
+        </div>
+
+        <!-- elements in case user is logged in -->
+        <div id="user-info">
+        	<div id ="user-name"></div>
+        	<button id="logout-button">Log Out</button>
+        </div>
+
+	</div> <!-- end of container -->
+
+	<!-- Scripts -->
+	<script src="js/helpers.js"></script>
+	<script src="js/publish.js"></script>
+	<script src="js/auth.js"></script>
+	<script src="js/displayPosts.js"></script>
+
+	<script>
+		fb.loadPosts();
+	</script>
+</body>
+</html>
