@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ProducerPro</title>
-	<link href="style.css" rel="stylesheet" type="text/css">
-    <style>
-</style>
+	<title>Profile Page</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAPhg4pMiHVUACnHzwdZmzALAtWq1SW_VU",
+    authDomain: "publish-a4985.firebaseapp.com",
+    databaseURL: "https://publish-a4985.firebaseio.com",
+    projectId: "publish-a4985",
+    storageBucket: "publish-a4985.appspot.com",
+    messagingSenderId: "509052343591",
+    appId: "1:509052343591:web:269fa35b2e3244fb92c502",
+    measurementId: "G-JNYKMM9WJ5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </head>
-<body>
+
+	<body>
     
          <nav>
-				<ul>
+			<ul>
 				<li><a href="index.html">Home</a></li>
                 <li><a href="posts.html">Post</a></li>
-				<li><a href="">Profile</a></li>
+				<li><a href="Profile.html">Profile</a></li>
 				<li><a href="">Settings</a></li>
-				<li><a href="">About</a></li>
+				<li><a href="about.html">About</a></li>
 			</ul>
-			
              </nav>
 
 	
@@ -27,6 +52,8 @@
             <h1>News Feed</h1>
         </div>
         
+        
+        <!-- navigation / menu -->
     </div>
     
 		<!-- elements to let users write a new post -->
@@ -48,9 +75,10 @@
 				</div>
 			</div>
 		</div>
-    
-    <!-- Scripts -->
+ <!-- end of container -->
+
+	<!-- Scripts -->
 	<script src="js/publish.js"></script>
- 
+
 </body>
 </html>

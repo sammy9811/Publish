@@ -87,7 +87,7 @@ p{
 
 a{
     font-size: 30px;
-    color: skyblue;
+    color: black;
     text-decoration: underline;
 }
 h1{
@@ -95,6 +95,12 @@ h1{
     text-align: center;
     color:  skyblue;
 	text-shadow: black;
+}
+
+h2{
+    text-align: center;
+    color: red;
+    font-size: 30px;
 }
 
 body{

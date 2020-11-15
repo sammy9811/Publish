@@ -1,4 +1,4 @@
-
+<!-- This is my profile.html file for the user's profile page -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,58 +31,45 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
-</head>
-<body>
     
-     <nav>
-			<ul>
+         <nav>
+				<ul>
 				<li><a href="index.html">Home</a></li>
                 <li><a href="posts.html">Post</a></li>
 				<li><a href="Profile.html">Profile</a></li>
 				<li><a href="">Settings</a></li>
 				<li><a href="about.html">About</a></li>
 			</ul>
+			
              </nav>
-
-	
+</head>
+<body>
     <div id="container">
-        <!-- title / logo -->
-        <div id="title">
-            <h1>ProducerPRO</h1>
-        </div>
-        
-        
-    </div>
-    
-    
-    
-	<div id="container">
-
-		<!-- elements to let users login -->
-		<div id="login">
-        	<input type="text" id="login-email" placeholder="Email">
-        	<input type="password" id="login-password" placeholder="Password">
-        	<button id="login-button">Login</button>
-        	<p id="login-message"></p>
-            <p><a href="create.html">Create a new account</a></p>
-        </div>
-
-        <!-- elements in case user is logged in -->
-        <div id="user-info">
+    	<div id="heading">
+			<h1>SammyBeatz</h1>
+            <h1> <img src="1.JPG"> </h1>
+		</div>
+		
+		<!-- elements in case user is logged in -->
+        <h1> <div id="user-info">
         	<div id ="user-name"></div>
         	<button id="logout-button">Log Out</button>
-        </div>
+        </div> </h1>
 
-	</div> <!-- end of container -->
-
-	<!-- Scripts -->
-	<script src="js/helpers.js"></script>
-	<script src="js/publish.js"></script>
-	<script src="js/auth.js"></script>
-	<script src="js/displayPosts.js"></script>
-
-	<script>
-		fb.loadPosts();
-	</script>
+       <h1><div id="profile">
+        	<input id="profile-display-name" placeholder="Update my username">
+        	<textarea id="profile-bio" placeholder="Add your bio"></textarea>
+        	<button id="update-profile">Update Profile</button>
+        </div> </h1> 
+    </div>
+                 <h2> Check me Out !</h2>
+    
+       <h2><a href="https://www.instagram.com/sammybeatz_/">Instagram</a></h2>
+     <h2><a href=https://soundcloud.com/sammybeatzzz>Soundcloud</a></h2>
+       <h2><a href="https://www.youtube.com/channel/UC0CZYsNQz1hj6wJ-vV5Ge7w?view_as=subscriber">Youtube</a></h2>
+    
+   	 <script src="js/helpers.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/profile.js"></script>
 </body>
 </html>
